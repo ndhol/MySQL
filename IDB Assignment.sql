@@ -60,8 +60,6 @@ create table paymentDetails
 cartId nvarchar(50) foreign key references cart(cartId),
 invoiceId nvarchar(50) foreign key references invoice(invoiceId));
 
---create table memberOrder(memberID nvarchar(50) not null primary key,orderID nvarchar(50) not null primary key,orderTotal int, orderDate date,deliveryStatus nvarchar(50));
-
 insert into members values('M0001','Rachel','124 England,EG12345','rachel@mail.com',0112398674,20),('M0002','Stephanie','356 England,EG35125','steph@mail.com',012364787,20),('M0003','Michelle','679 England,EG67098','michelle@mail.com',013891364,19),('M0004','Jenn','575 England,EG57097','jenn@mail.com',011237864,23),('M0005','Tom','219 England,21968','tom@mail.com',0117838678,25);
 insert into publisher values('P012','Weston'),('P010','Grinch'),('P001','Kenston'),('P015','Shawn'),('P016','John');
 insert into author values('A001','James'),('A012','John'),('A023','Cynthia'),('A041','Belle'),('A037','Mlly');
